@@ -1,35 +1,27 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
+root {
   /* Global Variables */
-  --main-color: lightblue;
+  --main-color: #161616;
 
   /* Component Specific Variables */
-  --box-color: #fff;
+  --box-color: #d9d9d9;
 
-  /* Navigation */
-  --navigation-background-color: rgb(0, 0, 0);
-  --navigation-logo-background-color: rgb(255, 255, 255);
-  --navigation-color: rgb(255, 255, 255);
+  /* Component Specific Variables */
+  --bg-color: #e8e8e8;
 }
 
-
 @media (prefers-color-scheme: dark) {
-
   :root {
-    
     /* Global Variables */
-    --main-color: #333;
-
+    --main-color: #161616;
 
     /* Component Specific Variables */
-    --box-color: rgb(235, 235, 160);
+    --box-color: #d9d9d9;
 
-    /* Navigation */
-    --navigation-background-color: rgb(235, 235, 160);
-    --navigation-logo-background-color: rgb(255, 255, 255);
-    --navigation-color: rgb(0, 0, 0);
+    /* Component Specific Variables */
+    --bg-color: #e8e8e8;
   }
-
 }
 
 * {
@@ -40,20 +32,17 @@
 
 html,
 body {
-  background-color: var(--main-color);
   height: 100%;
 }
 
 body {
-  background-color: var(--main-color);
+  background-color: var(--box-color);
 }
 
 a {
   color: inherit;
   text-decoration: underline;
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   html {
